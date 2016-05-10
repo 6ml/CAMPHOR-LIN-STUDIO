@@ -1,0 +1,399 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.clearfix:after{
+	content:".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.banner{
+	width: 100%;
+	height: 150px;
+	background-color: #EEE;
+	visibility: visible;
+}
+.banner_content{
+	width: 1000px;
+	margin: 0 auto;
+}
+/*.paging{
+	display: none;
+}*/
+/*.paging:first-child{
+	display: block;
+}*/
+.logo{
+	float: left;
+	margin: 25px 50px 0 50px;
+}
+.logo img{
+	width: 115px;
+	height: 105px;
+}
+.title{
+	margin-top: 95px;
+	float: left;
+}
+.first_level{
+	/*height: 35px;*/
+	/*overflow: hidden;*/   /*hover弹出二级菜单*/
+	float: left;
+	position: relative;
+}
+.title_li{
+	width: 64px;
+	height: 33px;
+	line-height: 25px;
+	text-align: center;
+	display: block;
+	font-size: 16px;
+	font-family: 'Microsoft 雅黑';
+	color: #000;
+	padding: 0 32px 0 32px;
+}
+.second_level{
+	position: absolute;
+	top: 33px;
+	z-index: 1;
+	overflow: hidden;
+	/*height: 0;*/  /*js滑出二级菜单*/
+	display: none;
+}
+.second_level a{
+	display: block;
+	width: 64px;
+	background-color: #fff;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 16px;
+	font-family: 'Microsoft 雅黑';
+	color: #000;
+	padding: 0 32px 0 32px;
+	border-bottom: 1px #898989 solid;
+	border-radius: 5px;
+}
+.second_level_bottom{    /*???*/
+	border-bottom: 0;
+}
+.name{
+	width: 1000px;
+	height: 150px;
+	padding-top: 40px;
+	background-image: url(../images/name_bg.png);
+	margin: 0 auto;
+	color: #fff;
+}
+.name_ch{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 30px;
+}
+.name_en{
+	width: 100%;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	height: 30px;
+}
+.content_container{
+	width: 1000px;
+	margin: 0 auto;
+	/*background-color: lightblue;*/
+	margin-top: 20px;
+}
+.list{
+	float: left;
+	width: 220px;
+	border: 1px solid #E1F8F0;
+	margin-right: 20px;
+}
+.list_title{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	background-color: #67dab3;
+	margin-bottom: 5px;
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+}
+.list ul li p a{
+	display: block;
+	font-size: 20px;
+	color: #000;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+}
+.list ul li:first-child p a{
+	background-color: #9ce7ce;
+	color: #fff;
+}
+.content{
+	float: left;
+	width: 756px;
+	border: 1px solid #20A77A;
+}
+.con_inform{
+	width: 100%;
+	height: 36px;
+	background-color: #016946;
+}
+.con_inform img{
+	float: left;
+	margin-left: 20px;
+	height: 36px;
+	width: 40px;
+}
+.con_inform p{
+	float: left;
+	font-size: 16px;
+	color: #fff;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 5px;
+}
+.con_box{
+	width: 100%;
+	padding: 18px 0;
+}
+.con_box img{
+	float: left;
+}
+.con_box img:first-child{
+	width: 170px;
+	height: 147px;
+	margin-left: 20px;
+}
+.point_icon{
+	width: 36px;
+	height: 36px;
+	margin: 36px 20px 0 15px;
+}
+.detail{
+	float: left;
+	width: 475px;
+	height: 147px;
+	background-color: #ececec;
+}
+.detail_title{
+	height: 22px;
+	line-height: 22px;
+	font-size: 22px;
+	color: #016946;
+	margin: 8px 0 0 25px;
+	float: left;
+}
+.detail_name{
+	height: 16px;
+	line-height: 16px;
+	font-size: 16px;
+	color: #016946;
+	float: right;
+	margin:13px 18px 0 0;
+}
+.detail_content{
+	clear: both;
+	line-height: 25px;
+	margin: 12px 16px 0 25px;
+}
+.detail_more a{
+	float: right;
+	line-height: 16px;
+	margin-right: 20px;
+	color: #016946;
+}
+.page_number{
+	width: 467px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 17px 0 30px 533px;
+}
+.page_number img{
+	float: left;
+	height: 30px;
+	width: 30px;
+	cursor: pointer;
+}
+.page_number ul li{
+	float: left;
+}
+.page_num a{
+	display: block;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #67dab3;
+	width: 30px;
+	border-radius: 15px;
+	border: 1px solid #67dab3;
+	margin: 0 15px 0 15px;
+	float: left;
+	display: none;
+}
+.page_num:first-child a{
+	background-color: #67dab3;
+	color: #fff;
+}
+.page_num p{
+	float: left;
+	color: #67dab3;
+	height: 30px;
+	line-height: 30px;
+	overflow: hidden;
+	cursor: pointer;
+	display: none;
+}
+
+
+.navigation{
+	width: 100%;
+	background-color: #f1f0f0;
+}
+.navcontent{
+	width: 1000px;
+	padding-top: 18px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.navcontent ul{
+	float: left;
+	width: 250px;
+	height: 175px;
+	border-right: 1px #b5b5b5 solid;
+}
+#navcontent_rightborder{
+	width: 180px;
+	border-right: 0;
+}
+.navcontent ul li:first-child{
+	margin-left: 65px;
+	margin-bottom: 25px;
+}
+.navcontent ul li{
+	margin-left: 95px;
+	margin-bottom: 15px;
+}
+.nav_ul_mrgbtm{
+	margin-bottom: 0;
+}
+.navcontent img{
+	margin-top: 3px;
+	margin-right: 5px;
+	height: 20px;
+	width: 20px;
+}
+.navcontent ul li a{
+	display: block;
+	font-size: 15px;
+	line-height: 20px;
+	height: 20px;
+}
+.navcontent ul li:first-child a{
+	font-size: 20px;
+	height: 25px;
+	line-height: 25px;
+	font-weight: bold;
+	float: left;
+}
+.navcontent ul li img{
+	float: left;
+}
+
+
+
+.footer{
+	width: 100%;
+	background-color: #bbbaba;
+	font-size: 15px;
+}
+.footer p{
+	height: 33px;
+	line-height: 33px;
+}
+.footcontent{
+	width: 1000px;
+	margin: 0 auto;
+	padding-top: 35px;
+}
+.infor{
+	float: left;
+}
+.wechat{
+	float: left;
+}
+.inflogo{
+	float: left;
+}
+.inflogo img{
+	height: 105px;
+	width: 125px;
+	margin: 15px 30px 0 40px;
+}
+.infcontent{
+	height: 135px;
+	margin-right: 190px;
+	padding-left: 40px;
+	border-left: 1px #7d7d7d solid;
+	float: left;
+}
+.wechat{
+	height: 135px;
+	border-left: 1px #7d7d7d solid;
+	padding-left: 28px;
+}
+.wecimg{
+	float: left;
+}
+.wecimg img{
+	margin-top: 5px;
+	width: 90px;
+	height: 84px;
+}
+.wectip{
+	float: left;
+	padding: 60px 0 0 30px;
+}
+.copyright{
+	padding: 33px 0 18px;
+}
+.copyright p{
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+.title_li:hover{
+	color: #FF7F47;
+}
+.second_level a:hover{
+	background-color: #67dab3;
+}
+.detail a:hover{
+	color: #FF7F47;
+	text-decoration: underline;
+}
+.page_num a:hover{
+	background-color: #FF7F47;
+	color: #000;
+}
+.page_num p:hover{
+	color: #FF7F47;
+}
+.list ul li p a:hover{
+	background-color: #67dab3;
+	color: #fff;
+}
